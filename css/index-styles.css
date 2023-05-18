@@ -136,13 +136,6 @@ button:visited {
     text-shadow: 1px 1px 1px #d90429, 2px 2px 1px #d90429;
   }
 
-footer > nav {
-    background: linear-gradient(to bottom, rgb(0, 0, 0) 0%, rgba(0,0,0,0) 100%);
-    justify-content: space-around;
-    font-weight: bold;
-    font-size: 1.5em;
-  }
-
 footer {
     background: rgb(0, 0, 0) center/cover url("../images/strom-clouds.jpg") no-repeat;
     margin: auto;
