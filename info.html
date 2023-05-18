@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter</title>
+    <link rel="stylesheet" href="css/info-styles.css" />
+    <link rel="index" href="index.html" />
+</head>
+
+<body>
+
+    <header>
+        <img src="images/iron-maiden-powerslave-logo.png" alt="Iron Maiden Logo" class="top-logo">
+        <h1 class="newsletter-heading">Newsletter</h1>
+        <nav>
+            <ul class="top-nav-bar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#facts-section">Discography</a></li>
+                <li><a href="index.html#quotes-section">Quotes & Lyrics</a></li>
+                <li><a href="index.html#tour-photos-section">Tour Photos</a></li>
+                <li><a href="index.html#links-section">Links</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="form-box">
+            <form action="/registration" method="POST">
+                <p>
+                    <label for="name">Name: </label>
+                    <input id="name" name="name" type="text" required />
+
+                    <label for="email">Email: </label>
+                    <input id="email" name="email" type="email" required />
+                </p>
+                <p>
+                    <label for="date-of-birth">Date of birth: </label>
+                    <input id="date-of-birth" name="date-of-birth" type="date" />
+
+                    <label for="lucky-number">Lucky number: </label>
+                    <input id="lucky-number" name="lucky-number" type="number" />
+                </p>
+                <p>
+                    <label for="favorite-color">Favorite Color: </label>
+                    <input id="favorite-color" name="favorite-color" type="color">
+                </p>
+                <p>
+                    <label for="confirmation">Check this box to confirm your newsletter subscription: </label>
+                    <input id="confirmation" name="confirmation" type="checkbox" />
+                </p>
+                <input id="submit" name="submit" type="submit" value="Sign Me Up!" />
+        </div>
+        </form>
+
+    </main>
+
+    <footer>
+        <img src="images/eddie-transparent2.png" alt="Eddie" class="eddie-bottom">
+    </footer>
+
+</body>
+
+</html>

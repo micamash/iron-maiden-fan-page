@@ -1,0 +1,200 @@
+.top-logo {
+    max-width: 25%;
+    display: block;
+    height: auto;
+    margin: 0 auto;
+  }
+
+header > img {
+  position: sticky;
+  top: 3%;
+ }
+
+header {
+  background: rgb(0, 0, 0) center/cover url("../images/strom-clouds.jpg") no-repeat;
+  position: sticky;
+  top: 0%;
+  margin: auto;
+  }
+
+h1 {
+    text-align: center;
+    text-transform: capitalize;
+    text-shadow: 1px 1px 1px #d90429, 2px 2px 1px #d90429;
+    text-align: center;
+    color:whitesmoke;
+    margin: 0%;
+    font-weight: normal;
+  }
+
+.welcome {
+  font-size: 2rem;
+  text-decoration-thickness: 2px;
+  padding-top: .8%;
+  }
+
+  header > nav {
+    background: linear-gradient(to top, rgb(0, 0, 0) 0%, rgba(0,0,0,0) 100%);
+    justify-content: space-around;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-top: -45px;
+  }
+
+  h2 {
+    text-align: center;
+    text-transform: capitalize;
+    text-shadow: 1px 1px 1px #d90429, 2px 2px 1px #d90429;
+    text-align: center;
+    color:whitesmoke;
+    margin: 0%;
+    font-weight: normal;
+  }
+
+.underline {
+  font-size: 2rem;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 10px;
+  padding-top: 2%;
+}
+
+body {
+    font-family: BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-align: center;
+    color: whitesmoke;
+    background-color: black;
+}
+
+ul > li {
+    display:inline-block;
+    padding-left: 20px;
+	  padding-right: 20px;
+}
+
+a:link {
+    color: #d90429;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px whitesmoke, 2px 2px 1px #d90429;
+  }
+
+a:visited {
+    color: #d90429;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px whitesmoke, 2px 2px 1px #d90429;
+  }
+  
+a:hover {
+    text-decoration: none;
+    color: white;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px #d90429, 2px 2px 1px #d90429;
+  }
+
+.logo-bottom {
+    max-width: 30%;
+    display: block;
+    height: auto;
+    margin: 0 auto;
+  }
+
+#newsletter-button {
+    background-color: black;
+    border: 2px solid whitesmoke;
+    color: whitesmoke;
+    text-shadow: 1px 1px 1px #d90429, 2px 2px 1px #d90429;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 12px;
+    font-weight: bold;
+    position: fixed;
+    bottom: 20px;
+    right: 70px;
+  }
+
+button:hover {
+    text-decoration: none;
+    color: #d90429;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px whitesmoke, 2px 2px 1px whitesmoke;
+  }
+
+button:link {
+    color: whitesmoke;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px #d90429, 2px 2px 1px #d90429;
+  }
+
+button:visited {
+    color: whitesmoke;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px #d90429, 2px 2px 1px #d90429;
+  }
+
+footer > nav {
+    background: linear-gradient(to bottom, rgb(0, 0, 0) 0%, rgba(0,0,0,0) 100%);
+    justify-content: space-around;
+    font-weight: bold;
+    font-size: 1.5em;
+  }
+
+footer {
+    background: rgb(0, 0, 0) center/cover url("../images/strom-clouds.jpg") no-repeat;
+    margin: auto;
+  }
+
+  .about-img {
+    width: 400px;
+  }
+
+  .small-eddie-section-break {
+    width: 150px;
+    padding-bottom: 1%;
+    padding-top: 2%;
+  }
+
+  .center-table {
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid whitesmoke;
+  }
+
+  th, td {
+    border: 1px solid #d90429;
+  }
+
+  .table-albums {
+    width: 200px;
+  }
+
+  .anchor {
+    padding-top: 200px;
+    margin-top: -200px;
+  }
+
+  blockquote {
+    font-style: italic;
+    margin: 1em 20em;
+    padding: .5em;
+    background-color: #3d3a46;
+  }
+
+.italic {
+  font-style: italic;
+}
+
+.tour-photo {
+  width: 400px;
+  box-shadow: 0 0 8px 8px white inset;
+}
+
+.link-list {
+  background-color: black;
+  box-shadow: 0 0 20px 5px black;
+  margin: 1%;
+}
