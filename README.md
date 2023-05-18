@@ -1,2 +1,2 @@
 # iron-maiden-fan-page
-This is an Iron Maiden fan page created for an HTML/CSS exercise during my time at Tech Elevator coding bootcamp. 
+This is an Iron Maiden fan page created for an HTML/CSS exercise during my time at Tech Elevator coding bootcamp. I created it from scratch based on the requirements of the assignment.
