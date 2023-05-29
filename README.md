@@ -28,7 +28,7 @@
 
 ### What I learned
 
-This is an Iron Maiden fan website created for an HTML/CSS exercise during my time in coding bootcamp. I created it from scratch based on the requirements of the assignment. I am actively adding to this website as I learn.
+This is an Iron Maiden fan website created for an HTML/CSS exercise during my time in coding bootcamp. I created it from scratch based on the requirements of the assignment. I am actively adding to this website as I continue to learn.
 
 ### Continued development
 
