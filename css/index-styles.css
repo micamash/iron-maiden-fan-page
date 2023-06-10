@@ -1,181 +1,191 @@
-.top-logo {
-    max-width: 25%;
-    display: block;
-    height: auto;
-    margin: 0 auto;
-  }
+html {
+  box-sizing: border-box;
+  overflow: hidden;
+}
 
-header > img {
-  position: sticky;
-  top: 3%;
- }
+body {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  color: whitesmoke;
+  line-height: 1.5;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 
 header {
   background: rgb(0, 0, 0) center/cover url("../images/strom-clouds.jpg") no-repeat;
   position: sticky;
-  top: 0%;
-  margin: auto;
-  }
+  height: 175px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "logo logo"
+    "text text"
+    "nav nav";
+  align-items: center;
+  justify-items: center;
+}
+
+.top-logo {
+  grid-area: logo;
+  max-width: 60%;
+  margin-top: 5px;
+}
+
+nav {
+  visibility: hidden;
+}
+
+
+.navbar {
+  grid-area: nav;
+  overflow: hidden;
+  background-color: rgba(5, 4, 4, 0.675);
+  font-family: 'Roboto', sans-serif;
+  border-radius: 5px;
+  margin-top: 30px;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: #d90429;
+  font-weight: bolder;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.dropdown {
+  float: left;
+  overflow: hidden;
+  margin-top: 2px;;
+}
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: #d90429;
+  font-weight: bolder;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  text-align: center;
+  color: #d90429;
+  text-shadow: 1px 1px 1px whitesmoke, 2px 2px 1px #d90429;
+}
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: black;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #171616;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(26, 25, 25, 0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown-content a:hover {
+  background-color: rgba(70, 69, 69, 0.2);
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+} 
+
 
 h1 {
-    text-align: center;
-    text-transform: capitalize;
-    text-shadow: 1px 1px 1px #d90429, 2px 2px 1px #d90429;
-    text-align: center;
-    color:whitesmoke;
-    margin: 0%;
-    font-weight: normal;
-  }
-
-.welcome {
-  font-size: 2rem;
+  grid-area: text;
+  text-transform: capitalize;
+  text-shadow: 1px 1px 1px #d90429, 2px 2px 1px #d90429;
+  color:whitesmoke;
+  margin: 0;
+  font-weight: normal;
+  font-size: 1.2rem;
   text-decoration-thickness: 2px;
-  padding-top: .8%;
-  }
-
-  header > nav {
-    background: linear-gradient(to top, rgb(0, 0, 0) 0%, rgba(0,0,0,0) 100%);
-    justify-content: space-around;
-    font-weight: bold;
-    font-size: 1.5em;
-    margin-top: -45px;
-  }
-
-  h2 {
-    text-align: center;
-    text-transform: capitalize;
-    text-shadow: 1px 1px 1px #d90429, 2px 2px 1px #d90429;
-    text-align: center;
-    color:whitesmoke;
-    margin: 0%;
-    font-weight: normal;
-  }
-
-.underline {
-  font-size: 2rem;
-  text-decoration: underline;
-  text-decoration-thickness: 2px;
-  text-underline-offset: 10px;
-  padding-top: 2%;
-}
-
-body {
-    font-family: BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
-    font-size: 1.6rem;
-    line-height: 1.5;
-    text-align: center;
-    color: whitesmoke;
-    background-color: black;
-}
-
-ul > li {
-    display:inline-block;
-    padding-left: 20px;
-	  padding-right: 20px;
 }
 
 a:link {
-    color: #d90429;
-    text-decoration: none;
-    text-shadow: 1px 1px 1px whitesmoke, 2px 2px 1px #d90429;
-  }
+  color: #d90429;
+  text-decoration: none;
+  text-shadow: 1px 1px 1px whitesmoke, 2px 2px 1px #d90429;
+}
 
 a:visited {
-    color: #d90429;
-    text-decoration: none;
-    text-shadow: 1px 1px 1px whitesmoke, 2px 2px 1px #d90429;
-  }
-  
+  color: #d90429;
+  text-decoration: none;
+  text-shadow: 1px 1px 1px whitesmoke, 2px 2px 1px #d90429;
+}
+
 a:hover {
-    text-decoration: none;
-    color: white;
-    text-decoration: none;
-    text-shadow: 1px 1px 1px #d90429, 2px 2px 1px #d90429;
-  }
+  text-decoration: none;
+  color: white;
+  text-decoration: none;
+  text-shadow: 1px 1px 1px #d90429, 2px 2px 1px #d90429;
+}
 
-.logo-bottom {
-    max-width: 30%;
-    display: block;
-    height: auto;
-    margin: 0 auto;
-  }
 
-#newsletter-button {
-    background-color: black;
-    border: 2px solid whitesmoke;
-    color: whitesmoke;
-    text-shadow: 1px 1px 1px #d90429, 2px 2px 1px #d90429;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    border-radius: 12px;
-    font-weight: bold;
-    position: fixed;
-    bottom: 20px;
-    right: 70px;
-  }
+section {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
 
-button:hover {
-    text-decoration: none;
-    color: #d90429;
-    text-decoration: none;
-    text-shadow: 1px 1px 1px whitesmoke, 2px 2px 1px whitesmoke;
-  }
+.small-eddie {
+  width: 200px;
+  padding-top: 10px;
+}
 
-button:link {
-    color: whitesmoke;
-    text-decoration: none;
-    text-shadow: 1px 1px 1px #d90429, 2px 2px 1px #d90429;
-  }
+blockquote {
+  font-style: italic;
+  background-color: #3d3a46;
+  padding: 20px;
+  width: 80vw;
+}
 
-button:visited {
-    color: whitesmoke;
-    text-decoration: none;
-    text-shadow: 1px 1px 1px #d90429, 2px 2px 1px #d90429;
-  }
+h2 {
+  text-align: center;
+  text-transform: capitalize;
+  text-shadow: 1px 1px 1px #d90429, 2px 2px 1px #d90429;
+  text-align: center;
+  color:whitesmoke;
+  margin: 0%;
+  font-weight: normal;
+}
 
-footer {
-    background: rgb(0, 0, 0) center/cover url("../images/strom-clouds.jpg") no-repeat;
-    margin: auto;
-  }
+.section-head {
+  font-size: 2rem;
+  padding-top: 2%;
+}
 
-  .about-img {
-    width: 400px;
-  }
+.about-img {
+  width: 300px;
+}
 
-  .small-eddie-section-break {
-    width: 150px;
-    padding-bottom: 1%;
-    padding-top: 2%;
-  }
+.center-table {
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid whitesmoke;
+}
 
-  .center-table {
-    margin-left: auto;
-    margin-right: auto;
-    border: 1px solid whitesmoke;
-  }
+th, td {
+  border: 1px solid #d90429;
+}
 
-  th, td {
-    border: 1px solid #d90429;
-  }
-
-  .table-albums {
-    width: 200px;
-  }
-
-  .anchor {
-    padding-top: 200px;
-    margin-top: -200px;
-  }
-
-  blockquote {
-    font-style: italic;
-    margin: 1em 20em;
-    padding: .5em;
-    background-color: #3d3a46;
-  }
+.table-albums {
+  width: 200px;
+}
 
 .italic {
   font-style: italic;
@@ -184,10 +194,87 @@ footer {
 .tour-photo {
   width: 400px;
   box-shadow: 0 0 8px 8px white inset;
+  box-shadow: 0 .5em 10em -0.4em;
+  color: grey;
 }
 
 .link-list {
   background-color: black;
   box-shadow: 0 0 20px 5px black;
   margin: 1%;
+}
+
+
+
+#newsletter-button {
+  background-color: black;
+  border: 2px solid whitesmoke;
+  padding: 5px;
+  font-size: 15px;
+  border-radius: 12px;
+  margin: 5px;
+}
+
+button:hover {
+  text-decoration: none;
+  color: #d90429;
+  text-decoration: none;
+  text-shadow: 1px 1px 1px whitesmoke, 2px 2px 1px whitesmoke;
+}
+
+button:link {
+  color: whitesmoke;
+  text-decoration: none;
+  text-shadow: 1px 1px 1px #d90429, 2px 2px 1px #d90429;
+}
+
+button:visited {
+  color: whitesmoke;
+  text-decoration: none;
+  text-shadow: 1px 1px 1px #d90429, 2px 2px 1px #d90429;
+}
+
+.logo-bottom {
+  height: 108px;
+}
+
+footer {
+  background: rgb(0, 0, 0) center/cover url("../images/strom-clouds.jpg") no-repeat;
+  width: 99vw;
+  height: 150px;
+  position: sticky;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+
+
+
+@media only screen and (min-width: 768px) {
+  .navbar {
+    visibility: hidden;
+  }
+
+  nav {
+    grid-area: nav;
+    background: linear-gradient(to top, rgb(0, 0, 0) 0%, rgba(0,0,0,0) 100%);
+    justify-content: space-around;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-top: -45px;
+  }
+  
+  ul {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    width: 100vw;
+  }
+  
+  ul > li {
+    display:inline-block;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }

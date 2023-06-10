@@ -6,11 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Links</title>
     <link rel="stylesheet" href="../css/index-styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"> 
 </head>
 <body>
+
     <header>
         <img src="../images/iron-maiden-logo.png" alt="Iron Maiden Logo" class="top-logo">
-        <h1 class="welcome">FAN PAGE</h1>
+        <h1>Fan Page</h1>
+
+        <div class="navbar">
+            <a href="../index.html">Home</a>
+            <div class="dropdown">
+              <button class="dropbtn">More...
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <li><a href="discography.html">Discography</a></li>
+                <li><a href="quotes.html">Quotes & Lyrics</a></li>
+                <li><a href="tour-photos.html">Tour Photos</a></li>
+                <li><a href="links.html">Links</a></li>
+              </div>
+            </div>
+          </div> 
+
         <nav>
             <ul class="top-nav-bar">
                 <li><a href="../index.html">Home</a></li>
@@ -24,8 +44,8 @@
     
     <main>
 
-        <section id="links-section" class="anchor">
-            <h2 class="underline">Links</h2>
+        <section id="links-section">
+            <h2 class="section-head">Links</h2>
             <ul>
                 <li class="link-list"><a href="https://www.ironmaiden.com/">Iron Maiden's Official Website</a></li>
                 <li class="link-list"><a href="https://en.wikipedia.org/wiki/Iron_Maiden">Iron Maiden on Wikipedia</a>
@@ -37,13 +57,12 @@
 
         </section>
 
-        <button id="newsletter-button">
-            <a href="info.html">Sign Up for the Newsletter</a>
-        </button>
-
     </main>
 
-    <footer>
+    <footer id="links-footer">
+        <button id="newsletter-button">
+            <a href="newsletter/info.html">Sign Up for the Newsletter</a>
+        </button>
         <img src="../images/eddie transparent.png" alt="Eddie" class="logo-bottom">
     </footer>
 

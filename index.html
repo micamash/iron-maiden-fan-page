@@ -5,14 +5,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tour Photos</title>
+    <title>Iron Maiden Fan Page</title>
     <link rel="stylesheet" href="css/index-styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"> 
 </head>
 
 <body>
     <header>
         <img src="images/iron-maiden-logo.png" alt="Iron Maiden Logo" class="top-logo">
-        <h1 class="welcome">FAN PAGE</h1>
+        <h1>Fan Page</h1>
+
+        <div class="navbar">
+            <a href="index.html">Home</a>
+            <div class="dropdown">
+              <button class="dropbtn">More...
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <li><a href="html/discography.html">Discography</a></li>
+                <li><a href="html/quotes.html">Quotes & Lyrics</a></li>
+                <li><a href="html/tour-photos.html">Tour Photos</a></li>
+                <li><a href="html/links.html">Links</a></li>
+              </div>
+            </div>
+          </div> 
+
         <nav>
             <ul class="top-nav-bar">
                 <li><a href="index.html">Home</a></li>
@@ -26,11 +45,8 @@
 
     <main>
 
-        <section id="home">
-            <img src="images/eddie-head-small.png" alt="Small Eddie Head" class="small-eddie-section-break">
-        </section>
-
         <section>
+            <img src="images/eddie-head-small.png" alt="Small Eddie Head" class="small-eddie">
             <p id="about-iron-maiden">
             <figure>
                 <blockquote>
@@ -49,13 +65,13 @@
             <img src="images/IM-band-transparent.png" alt="Iron Maiden Band Members Photo" class="about-img">
             </p>
         </section>
-        <button id="newsletter-button">
-            <a href="html/info.html">Sign Up for the Newsletter</a>
-        </button>
 
     </main>
 
     <footer>
+        <button id="newsletter-button">
+            <a href="html/newsletter/info.html">Sign Up for the Newsletter</a>
+        </button>
         <img src="images/eddie transparent.png" alt="Eddie" class="logo-bottom">
     </footer>
 
