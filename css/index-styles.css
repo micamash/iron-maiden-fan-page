@@ -1,6 +1,5 @@
 html {
   box-sizing: border-box;
-  overflow: hidden;
 }
 
 body {
@@ -15,31 +14,31 @@ body {
   align-items: center;
 }
 
-
 header {
   background: rgb(0, 0, 0) center/cover url("../images/strom-clouds.jpg") no-repeat;
   position: sticky;
-  height: 175px;
+  height: 18vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
-    "logo logo"
-    "text text"
-    "nav nav";
+  "logo nav"
+  "logo nav"
+  "text nav";
   align-items: center;
   justify-items: center;
+  width: 99vw;
+  border-bottom: #3d3a46 double;
 }
 
 .top-logo {
   grid-area: logo;
   max-width: 60%;
-  margin-top: 5px;
+  margin-top: 50px;
 }
 
 nav {
   visibility: hidden;
 }
-
 
 .navbar {
   grid-area: nav;
@@ -48,6 +47,7 @@ nav {
   font-family: 'Roboto', sans-serif;
   border-radius: 5px;
   margin-top: 30px;
+  margin-right: 27px;
 }
 
 .navbar a {
@@ -59,11 +59,13 @@ nav {
   padding: 14px 16px;
   text-decoration: none;
 }
+
 .dropdown {
   float: left;
   overflow: hidden;
-  margin-top: 2px;;
+  margin-top: 2px;
 }
+
 .dropdown .dropbtn {
   font-size: 16px;
   border: none;
@@ -77,9 +79,11 @@ nav {
   color: #d90429;
   text-shadow: 1px 1px 1px whitesmoke, 2px 2px 1px #d90429;
 }
+
 .navbar a:hover, .dropdown:hover .dropbtn {
   background-color: black;
 }
+
 .dropdown-content {
   display: none;
   position: absolute;
@@ -87,7 +91,9 @@ nav {
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(26, 25, 25, 0.2);
   z-index: 1;
+  list-style-type: none;
 }
+
 .dropdown-content a {
   float: none;
   color: black;
@@ -96,20 +102,21 @@ nav {
   display: block;
   text-align: left;
 }
+
 .dropdown-content a:hover {
   background-color: rgba(70, 69, 69, 0.2);
 }
+
 .dropdown:hover .dropdown-content {
   display: block;
 } 
-
 
 h1 {
   grid-area: text;
   text-transform: capitalize;
   text-shadow: 1px 1px 1px #d90429, 2px 2px 1px #d90429;
   color:whitesmoke;
-  margin: 0;
+  margin: 0 0 15px 0;
   font-weight: normal;
   font-size: 1.2rem;
   text-decoration-thickness: 2px;
@@ -134,7 +141,6 @@ a:hover {
   text-shadow: 1px 1px 1px #d90429, 2px 2px 1px #d90429;
 }
 
-
 section {
   display: flex;
   flex-direction: column;
@@ -143,15 +149,23 @@ section {
 }
 
 .small-eddie {
-  width: 200px;
-  padding-top: 10px;
+  width: 30%;
+  padding: 30px 0 0 0;
+}
+
+figure {
+  margin-top: 0;
+  max-width: 99%;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
 }
 
 blockquote {
   font-style: italic;
   background-color: #3d3a46;
   padding: 20px;
-  width: 80vw;
+  margin: 0 2px 2px 0;
 }
 
 h2 {
@@ -167,16 +181,17 @@ h2 {
 .section-head {
   font-size: 2rem;
   padding-top: 2%;
+  margin-bottom: 2%;
 }
 
 .about-img {
   width: 300px;
+  border: #3d3a46 double;
 }
 
 .center-table {
-  margin-left: auto;
-  margin-right: auto;
   border: 1px solid whitesmoke;
+  margin-bottom: 30px;
 }
 
 th, td {
@@ -184,7 +199,7 @@ th, td {
 }
 
 .table-albums {
-  width: 200px;
+  width: 100%;
 }
 
 .italic {
@@ -192,19 +207,27 @@ th, td {
 }
 
 .tour-photo {
-  width: 400px;
+  max-width: 95vw;
   box-shadow: 0 0 8px 8px white inset;
   box-shadow: 0 .5em 10em -0.4em;
   color: grey;
+  border: #3d3a46 double;
+  border-radius: 10px;
+  margin: 10px 0 10px 0;
+}
+
+#links-section > ul {
+  padding: 0;
 }
 
 .link-list {
   background-color: black;
   box-shadow: 0 0 20px 5px black;
-  margin: 1%;
+  margin: 10%;
+  list-style-type: none;
+  border:#3d3a46 double;
+  border-radius: 20px;
 }
-
-
 
 #newsletter-button {
   background-color: black;
@@ -240,36 +263,68 @@ button:visited {
 
 footer {
   background: rgb(0, 0, 0) center/cover url("../images/strom-clouds.jpg") no-repeat;
+  position: sticky;
   width: 99vw;
   height: 150px;
-  position: sticky;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-items: center;
+  border-top: #3d3a46 double;
 }
 
 
 
-@media only screen and (min-width: 768px) {
+/*larger screens in process*/
+
+@media only screen and (min-width: 811px) {
+  
   .navbar {
     visibility: hidden;
+    position: absolute;
   }
 
-  nav {
+  header {
+    display: flex;
+    flex-direction: column;
+    height: 25vh;
+    position: relative;
+
+    /* grid-template-areas:
+    "logo logo"
+    "text text"
+    "nav nav";
+    text-align: center; */
+  }
+
+  header > h1 {
+    margin: 0%;
+  }
+
+  .top-nav-bar {
+    visibility: visible;
+    display: inline-block;
+    vertical-align: bottom;
+    vertical-align: bottom;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  .top-logo {
+    grid-area: logo;
+    max-width: 30%;
+    margin-top: 5px;
+  }
+
+  ul {
     grid-area: nav;
     background: linear-gradient(to top, rgb(0, 0, 0) 0%, rgba(0,0,0,0) 100%);
     justify-content: space-around;
     font-weight: bold;
     font-size: 1.5em;
-    margin-top: -45px;
-  }
-  
-  ul {
-    display: flex;
-    justify-items: center;
-    align-items: center;
-    width: 100vw;
+    width: 99vw;
+    margin: 15px 0 0 0;
   }
   
   ul > li {
