@@ -17,13 +17,13 @@ body {
 header {
   background: rgb(0, 0, 0) center/cover url("../images/strom-clouds.jpg") no-repeat;
   position: sticky;
-  height: 18vh;
+  height: 20vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
-  "logo nav"
-  "logo nav"
-  "text nav";
+  "nav logo"
+  "nav logo"
+  "nav text";
   align-items: center;
   justify-items: center;
   width: 99vw;
@@ -32,8 +32,8 @@ header {
 
 .top-logo {
   grid-area: logo;
-  max-width: 60%;
-  margin-top: 50px;
+  max-width: 70%;
+  margin-top: 40px;
 }
 
 nav {
@@ -46,8 +46,8 @@ nav {
   background-color: rgba(5, 4, 4, 0.675);
   font-family: 'Roboto', sans-serif;
   border-radius: 5px;
-  margin-top: 30px;
-  margin-right: 27px;
+  margin-top: 40px;
+  margin-left: 27px;
 }
 
 .navbar a {
@@ -120,6 +120,7 @@ h1 {
   font-weight: normal;
   font-size: 1.2rem;
   text-decoration-thickness: 2px;
+  margin-top: 5px;
 }
 
 a:link {
@@ -149,7 +150,7 @@ section {
 }
 
 .small-eddie {
-  width: 30%;
+  width: 150px;
   padding: 30px 0 0 0;
 }
 
@@ -289,12 +290,7 @@ footer {
     flex-direction: column;
     height: 25vh;
     position: relative;
-
-    /* grid-template-areas:
-    "logo logo"
-    "text text"
-    "nav nav";
-    text-align: center; */
+    border-bottom: none;
   }
 
   header > h1 {
