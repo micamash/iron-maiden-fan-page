@@ -17,13 +17,13 @@ body {
 header {
   background: rgb(0, 0, 0) center/cover url("../images/strom-clouds.jpg") no-repeat;
   position: sticky;
-  height: 15vh;
+  max-height: 15vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
-  "nav logo"
-  "nav logo"
-  "nav text";
+    "nav logo"
+    "nav logo"
+    "nav text";
   align-items: center;
   justify-items: center;
   width: 99vw;
@@ -33,7 +33,7 @@ header {
 .top-logo {
   grid-area: logo;
   max-width: 165px;
-  margin: 20px 5px 0 0;
+  margin: 30px 5px 0 0;
 }
 
 nav {
@@ -80,7 +80,8 @@ nav {
   text-shadow: 1px 1px 1px whitesmoke, 2px 2px 1px #d90429;
 }
 
-.navbar a:hover, .dropdown:hover .dropbtn {
+.navbar a:hover,
+.dropdown:hover .dropbtn {
   background-color: black;
 }
 
@@ -109,13 +110,13 @@ nav {
 
 .dropdown:hover .dropdown-content {
   display: block;
-} 
+}
 
 h1 {
   grid-area: text;
   text-transform: capitalize;
   text-shadow: 1px 1px 1px #d90429, 2px 2px 1px #d90429;
-  color:whitesmoke;
+  color: whitesmoke;
   margin: 0 0 15px 0;
   font-weight: normal;
   font-size: 1.2rem;
@@ -174,7 +175,7 @@ h2 {
   text-transform: capitalize;
   text-shadow: 1px 1px 1px #d90429, 2px 2px 1px #d90429;
   text-align: center;
-  color:whitesmoke;
+  color: whitesmoke;
   margin: 0%;
   font-weight: normal;
 }
@@ -195,7 +196,8 @@ h2 {
   margin-bottom: 30px;
 }
 
-th, td {
+th,
+td {
   border: 1px solid #d90429;
 }
 
@@ -213,7 +215,7 @@ figure {
 
 .quote {
   margin: 10px 50px 0 50px;
-} 
+}
 
 .tour-photo {
   max-width: 80vw;
@@ -225,7 +227,7 @@ figure {
   margin: 10px 0 10px 0;
 }
 
-#links-section > ul {
+#links-section>ul {
   padding: 0;
 }
 
@@ -234,7 +236,7 @@ figure {
   box-shadow: 0 0 20px 5px black;
   margin: 10%;
   list-style-type: none;
-  border:#3d3a46 double;
+  border: #3d3a46 double;
   border-radius: 20px;
 }
 
@@ -283,12 +285,6 @@ footer {
 }
 
 
-@media only screen and (min-width: 500px) {
-  header {
-    height: 19vh;
-  }
-}
-
 @media only screen and (orientation: landscape) {
   .navbar {
     visibility: hidden;
@@ -298,13 +294,13 @@ footer {
   header {
     display: flex;
     flex-direction: column;
-    height: 31vh;
+    max-height: 100%;
     position: relative;
     border-bottom: none;
   }
 
-  header > h1 {
-    margin-top: 0;
+  header>h1 {
+    margin: -30px 0 50px 175px;
   }
 
   .top-nav-bar {
@@ -319,30 +315,24 @@ footer {
 
   .top-logo {
     grid-area: logo;
-    max-width: 30%;
-    margin-top: 5px;
+    max-width: 400px;
+    margin-top: 20px;
   }
 
   ul {
     grid-area: nav;
-    background: linear-gradient(to top, rgb(0, 0, 0) 0%, rgba(0,0,0,0) 100%);
+    background: linear-gradient(to top, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
     justify-content: space-around;
     font-weight: bold;
     font-size: 1.5em;
     width: 99vw;
     margin: 15px 0 0 0;
   }
-  
-  ul > li {
-    display:inline-block;
+
+  ul>li {
+    display: inline-block;
     padding-left: 20px;
     padding-right: 20px;
-  }
-
-  .top-logo {
-    grid-area: logo;
-    max-width: 400px;
-    margin-top: 30px;
   }
 
   figure {
@@ -351,14 +341,14 @@ footer {
 
   .quote {
     margin: 0 200px 0 200px;
-  } 
+  }
 
-  #links-section > ul {
-  display: flex;
-  flex-direction: column;
-  width: 85%;
-  margin-bottom: 10px;
-}
+  #links-section>ul {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    margin-bottom: 10px;
+  }
 
   .link-list {
     margin: 10px;

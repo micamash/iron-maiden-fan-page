@@ -1,103 +1,101 @@
 .top-logo {
-    max-width: 25%;
-    display: block;
-    height: auto;
-    margin: 0 auto;
-  }
+  max-width: 25%;
+  display: block;
+  height: auto;
+  margin: 0 auto;
+}
 
-  .newsletter-heading {
-    font-size: 2rem;
-    text-decoration-thickness: 2px;
-    padding-top: .8%;
-  }
+.newsletter-heading {
+  font-size: 2rem;
+  text-decoration-thickness: 2px;
+  padding-top: .8%;
+}
 
-header > img {
+header>img {
   position: sticky;
   top: 3%;
- }
+}
 
 header {
   background: #0122C7;
   position: sticky;
   top: 0%;
   margin: auto;
-  }
-
-h1 {
-    text-align: center;
-    text-transform: capitalize;
-    text-shadow: 1px 1px 1px #C27200, 2px 2px 1px #C27200;
-    text-align: center;
-    color:whitesmoke;
-    margin: 0%;
-    font-weight: normal;
-  }
-
-header > nav {
-    background: linear-gradient(to top, rgb(0, 0, 0) 0%, rgba(0,0,0,0) 100%);
-    justify-content: space-around;
-    font-weight: bold;
-    font-size: 1.5em;
-    margin-top: -45px;
-  }
-
-  nav {
-      background: linear-gradient(to top, rgb(0, 0, 0) 0%, rgba(0,0,0,0) 100%);
-  }
-
-body {
-    font-family: BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
-    font-size: 1.6rem;
-    line-height: 1.5;
-    text-align: center;
-    color: whitesmoke;
-    background: black;
 }
 
-ul > li {
-    display:inline-block;
-    padding-left: 20px;
-	  padding-right: 20px;
+h1 {
+  text-align: center;
+  text-transform: capitalize;
+  text-shadow: 1px 1px 1px #C27200, 2px 2px 1px #C27200;
+  text-align: center;
+  color: whitesmoke;
+  margin: 0%;
+  font-weight: normal;
+}
+
+header>nav {
+  background: linear-gradient(to top, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
+  justify-content: space-around;
+  font-weight: bold;
+  font-size: 1.5em;
+  margin-top: -45px;
+}
+
+nav {
+  background: linear-gradient(to top, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+body {
+  font-family: BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  text-align: center;
+  color: whitesmoke;
+  background: black;
+}
+
+ul>li {
+  display: inline-block;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 a:link {
-    color: #C27200;
-    text-decoration: none;
-    text-shadow: 1px 1px 1px whitesmoke, 2px 2px 1px #C27200;
-  }
+  color: #C27200;
+  text-decoration: none;
+  text-shadow: 1px 1px 1px whitesmoke, 2px 2px 1px #C27200;
+}
 
 a:visited {
-    color: #C27200;
-    text-decoration: none;
-    text-shadow: 1px 1px 1px whitesmoke, 2px 2px 1px #C27200;
-  }
-  
+  color: #C27200;
+  text-decoration: none;
+  text-shadow: 1px 1px 1px whitesmoke, 2px 2px 1px #C27200;
+}
+
 a:hover {
-    text-decoration: none;
-    color: white;
-    text-decoration: none;
-    text-shadow: 1px 1px 1px #C27200, 2px 2px 1px #C27200;
-  }
+  text-decoration: none;
+  color: white;
+  text-decoration: none;
+  text-shadow: 1px 1px 1px #C27200, 2px 2px 1px #C27200;
+}
 
 .eddie-bottom {
-    max-width: 50%;
-    display: block;
-    height: auto;
-    margin: 0 auto;
-  }
+  max-width: 50%;
+  display: block;
+  height: auto;
+  margin: 0 auto;
+}
 
 footer {
-    background: #0122C7;
-    position: sticky;
-    top: 0%;
-    margin: auto;
-    height: max-content;
-  }
+  background: #0122C7;
+  position: sticky;
+  top: 0%;
+  margin: auto;
+  height: max-content;
+}
 
-  form {
-      padding-bottom: 3%;
-      padding-top: 1%;
-      background-color: black;
-  }
-
-
+form {
+  padding-bottom: 3%;
+  padding-top: 1%;
+  background-color: black;
+}
