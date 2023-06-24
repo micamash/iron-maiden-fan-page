@@ -33,7 +33,7 @@ header {
 .top-logo {
   grid-area: logo;
   max-width: 165px;
-  margin: 30px 5px 0 0;
+  margin: 0px 5px 0 0;
 }
 
 nav {
@@ -243,7 +243,7 @@ figure {
 #newsletter-button {
   background-color: black;
   border: 2px solid whitesmoke;
-  padding: 10px;
+  padding: 5px;
   font-size: 15px;
   border-radius: 12px;
   margin: 5px;

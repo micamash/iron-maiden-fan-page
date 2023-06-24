@@ -162,6 +162,7 @@ main {
   color: whitesmoke;
   background-color: #0122C7;
   text-shadow: 1px 1px 1px #C27200;
+  cursor: pointer;
 }
 
 .logo-bottom {
