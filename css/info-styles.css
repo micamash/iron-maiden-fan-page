@@ -181,7 +181,7 @@ footer {
 }
 
 
-@media only screen and (orientation: landscape) {
+@media only screen and (min-width:825px) {
   .navbar {
     visibility: hidden;
     position: absolute;
