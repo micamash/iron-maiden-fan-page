@@ -218,7 +218,7 @@ figure {
 }
 
 .tour-photo {
-  max-width: 80vw;
+  max-width: 800px;
   box-shadow: 0 0 8px 8px white inset;
   box-shadow: 0 .5em 10em -0.4em;
   color: grey;
